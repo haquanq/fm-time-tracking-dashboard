@@ -149,6 +149,7 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     gap: 0.25rem 1rem;
+    color: var(--clr-blue-300);
 }
 .tracking__option__radiobox {
     cursor: pointer;
@@ -240,7 +241,7 @@ h6 {
     border-radius: var(--rounded-lg);
     box-shadow: var(--shadow-sm);
 }
-.tracking__item__link {
+.tracking__item__inner {
     display: block;
     text-decoration: none;
     color: inherit;
@@ -250,6 +251,7 @@ h6 {
     border-radius: inherit;
     background-color: var(--clr-blue-700);
     padding: 1.4375rem 1.5rem 1.9375rem 1.5rem;
+    cursor: pointer;
 }
 .tracking__item__header {
     display: flex;
@@ -305,21 +307,17 @@ h6 {
         color: var(--clr-white);
         outline: 2px dashed var(--clr-white);
     }
-    .tracking__item__link:focus-visible {
-        outline: 3px dashed var(--tracking__item--bg);
-        outline-offset: -6px;
-    }
     .tracking__item__more-btn:focus-visible {
         outline: 2px dashed var(--clr-white);
     }
 }
 
 @media (hover: hover) {
-    .tracking__item__link:hover {
+    .tracking__item__inner:hover {
         outline: 3px dashed var(--tracking__item--bg);
         outline-offset: -6px;
     }
-    .tracking__item__link:hover .tracking__item__title {
+    .tracking__item__inner:hover .tracking__item__title {
         color: var(--tracking__item--bg);
     }
     .tracking__option__radiobox:hover .tracking__option__label {
@@ -399,7 +397,7 @@ h6 {
     .tracking__item {
         padding-top: 2.8125rem;
     }
-    .tracking__item__link {
+    .tracking__item__inner {
         padding: 1.5rem 1.875rem 2.125rem 1.875rem;
     }
 }
