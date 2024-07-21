@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <main class="main__container">
+      <h1 class="sr-only">Your time tracking dashboard</h1>
+
+      <section class="tracking__wrapper">
+        <div class="tracking__header">
+          <div class="tracking__person">
+            <img
+              class="tracking__person__avatar"
+              src="./assets/images/image-jeremy.png"
+              alt="Jeremy avatar image"
+              aria-hidden="true"
+            />
+            <h2 class="tracking__person__name">
+              <p class="tracking__person__name--sub">Report for</p>
+              <span class="tracking__person__name--main">Jeremy Robson</span>
+            </h2>
+          </div>
+          <fieldset class="tracking__option">
+            <legend class="sr-only">Select time tracking periods</legend>
+            <label class="tracking__option__radiobox" for="tracking-daily">
+              <input
+                class="tracking__option__input"
+                id="tracking-daily"
+                type="radio"
+                name="tracking-period"
+                value="daily"
+              />
+              <span class="tracking__option__label">Daily</span>
+            </label>
+            <label class="tracking__option__radiobox" for="tracking-weekly">
+              <input
+                class="tracking__option__input"
+                id="tracking-weekly"
+                type="radio"
+                name="tracking-period"
+                value="weekly"
+                checked
+              />
+              <span class="tracking__option__label">Weekly</span>
+            </label>
+            <label class="tracking__option__radiobox" for="tracking-monthly">
+              <input
+                class="tracking__option__input"
+                id="tracking-monthly"
+                type="radio"
+                name="tracking-period"
+                value="monthly"
+              />
+              <span class="tracking__option__label">Monthly</span>
+            </label>
+          </fieldset>
+        </div>
+        <ul class="tracking__content">
+          <li class="tracking__item">
+            <img
+              class="tracking__item__icon"
+              src="./assets/images/icon-work.svg"
+              alt="Work icon"
+              aria-hidden="true"
+            />
+            <a class="tracking__item__link" href="">
+              <div class="tracking__item__header">
+                <h3 class="tracking__item__title">
+                  <span>Work</span>
+                </h3>
+                <button class="tracking__item__more-btn" aria-label="More">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="tracking__item__content">
+                <p class="tracking__item__hours">
+                  <span class="daily" hidden>5hrs</span>
+                  <span class="weekly">32hrs</span>
+                  <span class="monthly" hidden>103hrs</span>
+                </p>
+                <p class="tracking__item__prev">
+                  <span class="daily" hidden>Yesterday - 7hrs</span>
+                  <span class="weekly">Last Week - 36hrs</span>
+                  <span class="monthly" hidden>Last Month - 128hrs</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="tracking__item">
+            <img
+              class="tracking__item__icon"
+              src="./assets/images/icon-play.svg"
+              alt="Play icon"
+              aria-hidden="true"
+            />
+            <a class="tracking__item__link" href="">
+              <div class="tracking__item__header">
+                <h3 class="tracking__item__title">
+                  <span>Play</span>
+                </h3>
+                <button class="tracking__item__more-btn" aria-label="More">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="tracking__item__content">
+                <p class="tracking__item__hours">
+                  <span class="daily" hidden>1hrs</span>
+                  <span class="weekly">10hrs</span>
+                  <span class="monthly" hidden>23hrs</span>
+                </p>
+                <p class="tracking__item__prev">
+                  <span class="daily" hidden>Yesterday - 2hrs</span>
+                  <span class="weekly">Last Week - 8hrs</span>
+                  <span class="monthly" hidden>Last Month - 29hrs</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="tracking__item">
+            <img
+              class="tracking__item__icon"
+              src="./assets/images/icon-study.svg"
+              alt="Study icon"
+              aria-hidden="true"
+            />
+            <a class="tracking__item__link" href="">
+              <div class="tracking__item__header">
+                <h3 class="tracking__item__title"><span>Study</span></h3>
+                <button class="tracking__item__more-btn" aria-label="More">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="tracking__item__content">
+                <p class="tracking__item__hours">
+                  <span class="daily" hidden>0hrs</span>
+                  <span class="weekly">4hrs</span>
+                  <span class="monthly" hidden>13hrs</span>
+                </p>
+                <p class="tracking__item__prev">
+                  <span class="daily" hidden>Yesterday - 1hrs</span>
+                  <span class="weekly">Last Week - 7hrs</span>
+                  <span class="monthly" hidden>Last Month - 19hrs</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="tracking__item">
+            <img
+              class="tracking__item__icon"
+              src="./assets/images/icon-exercise.svg"
+              alt="Exercise icon"
+              aria-hidden="true"
+            />
+            <a class="tracking__item__link" href="">
+              <div class="tracking__item__header">
+                <h3 class="tracking__item__title"><span>Exercise</span></h3>
+                <button class="tracking__item__more-btn" aria-label="More">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="tracking__item__content">
+                <p class="tracking__item__hours">
+                  <span class="daily" hidden>1hrs</span>
+                  <span class="weekly">4hrs</span>
+                  <span class="monthly" hidden>11hrs</span>
+                </p>
+                <p class="tracking__item__prev">
+                  <span class="daily" hidden>Yesterday - 1hrs</span>
+                  <span class="weekly">Last Week - 5hrs</span>
+                  <span class="monthly" hidden>Last Month - 18hrs</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="tracking__item">
+            <img
+              class="tracking__item__icon"
+              src="./assets/images/icon-social.svg"
+              alt="Social icon"
+              aria-hidden="true"
+            />
+            <a class="tracking__item__link" href="">
+              <div class="tracking__item__header">
+                <h3 class="tracking__item__title"><span>Social</span></h3>
+                <button class="tracking__item__more-btn" aria-label="More">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="tracking__item__content">
+                <p class="tracking__item__hours">
+                  <span class="daily" hidden>1hrs</span>
+                  <span class="weekly">5hrs</span>
+                  <span class="monthly" hidden>21hrs</span>
+                </p>
+                <p class="tracking__item__prev">
+                  <span class="daily" hidden>Yesterday - 3hrs</span>
+                  <span class="weekly">Last Week - 10hrs</span>
+                  <span class="monthly" hidden>Last Month - 23hrs</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="tracking__item">
+            <img
+              class="tracking__item__icon"
+              src="./assets/images/icon-self-care.svg"
+              alt="self care icon"
+              aria-hidden="true"
+            />
+            <a class="tracking__item__link" href="">
+              <div class="tracking__item__header">
+                <h3 class="tracking__item__title"><span>Self Care</span></h3>
+                <button class="tracking__item__more-btn" aria-label="More">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="tracking__item__content">
+                <p class="tracking__item__hours">
+                  <span class="daily" hidden>0hrs</span>
+                  <span class="weekly">2hrs</span>
+                  <span class="monthly" hidden>7hrs</span>
+                </p>
+                <p class="tracking__item__prev">
+                  <span class="daily" hidden>Yesterday - 1hrs</span>
+                  <span class="weekly">Last Week - 2hrs</span>
+                  <span class="monthly" hidden>Last Month - 11hrs</span>
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
