@@ -8,6 +8,7 @@ Thanks to fronendmentor team, this challenge gave me an opportunity to learn mor
 
 🚀 **Built with**
 
+- Mobile-first workflow
 - Semantic HTML
 - Pure CSS
 - Vanilla JavaScript
