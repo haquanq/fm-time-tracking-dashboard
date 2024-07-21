@@ -15,7 +15,7 @@
 
     --clr-white: hsl(0, 0%, 100%);
 
-    --shadow-sm: box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    --shadow-sm: rgba(0, 0, 0, 0.1) 0px 10px 32px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
 
     --text-xs: 0.75rem;
     --text-sm: 0.875rem;
@@ -210,7 +210,6 @@ h6 {
 .tracking__item:nth-child(1) .tracking__item__icon {
     top: -0.625rem;
     right: 1.0625rem;
-
 }
 .tracking__item:nth-child(2) .tracking__item__icon {
     top: -0.3125rem;
@@ -219,7 +218,6 @@ h6 {
 .tracking__item:nth-child(3) .tracking__item__icon {
     top: -0.4375rem;
     right: 1.125rem;
-
 }
 .tracking__item:nth-child(4) .tracking__item__icon {
     top: -0.0625rem;
